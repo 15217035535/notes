@@ -56,4 +56,19 @@ Zookeeper服务是用Java创建的，需要安装jdk7以上版本，以下是安
 ./zkServer.sh restart  # 重启Zookeeper服务
 ```
 
-111111
+### 3.3客户端常用命令
+
+``` shell 
+./zkCli.sh -server ip:port # 连接Zookeeper服务器
+quit # 断开连接
+help # 查看命令帮助
+ls 目录 # 显示指定目录下节点
+create /节点path value # 创建节点
+get /节点path # 获取节点值
+set /节点path value # 设置节点值
+delete /节点path # 删除单个节点
+deleteall /节点path # 删除带有子节点的节点
+```
+
+
+
